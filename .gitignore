@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+# Ignorar archivos del sistema Mac
+.DS_Store
+
+# Ignorar carpetas y archivos generados por compiladores o IDE
+/target
+*.log
+*.class
+*.iml
+.idea/
+/.vscode/
