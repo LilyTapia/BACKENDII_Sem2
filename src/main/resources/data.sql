@@ -1,0 +1,4 @@
+-- Insert roles if they don't exist
+INSERT INTO roles (nombre) SELECT 'CLIENTE' WHERE NOT EXISTS (SELECT 1 FROM roles WHERE nombre = 'CLIENTE');
+INSERT INTO roles (nombre) SELECT 'EMPLEADO' WHERE NOT EXISTS (SELECT 1 FROM roles WHERE nombre = 'EMPLEADO');
+INSERT INTO roles (nombre) SELECT 'GERENTE' WHERE NOT EXISTS (SELECT 1 FROM roles WHERE nombre = 'GERENTE');
