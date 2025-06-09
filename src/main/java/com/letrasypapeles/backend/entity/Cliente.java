@@ -60,4 +60,9 @@ public class Cliente {
             this.roles.remove(role);
         }
     }
+
+    public void setApellido(String apellido) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setApellido'");
+    }
 }
